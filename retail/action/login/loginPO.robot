@@ -8,7 +8,6 @@ Resource          ../../../core/common.robot
 Open Browser To Login Page
     Open Browser    ${LOGIN URL}    ${BROWSER}
     Maximize Browser Window
-    #Set Selenium Speed    ${DELAY}
 
 Login Page Should Be Open
     Title Should Be    Login Page
@@ -29,5 +28,6 @@ Submit Credentials
     Click Button    ${login_btn}
 
 Welcome Page Should Be Open
-    #Set Selenium Speed    ${DELAY}
+    Sleep   10s
     Location Should Be    ${WELCOME URL}
+

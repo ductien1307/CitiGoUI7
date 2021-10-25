@@ -1,2 +1,2 @@
 *** Variables ***
-${total_invoice_lbl}     (//td[contains(@class,'invoiceSummarySubTotal')])[2]
+${total_invoice_lbl}     (//td[contains(@class,'invoiceSummaryTotalPayment')])[2]

@@ -15,7 +15,7 @@ Click save product
     click element       ${save_product_btn}
 Verify save message success
     [Arguments]     ${mess_success}
-    Wait Until Page Contains Element    ${mess_success_lbl}      20s
+    Wait Until Page Contains Element    ${mess_success_lbl}      40s
     Element Should Contain    ${mess_success_lbl}     ${mess_success}
 
 
