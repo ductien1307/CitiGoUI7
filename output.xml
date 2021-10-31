@@ -1,235 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.1 (Python 3.9.7 on darwin)" generated="20211025 16:33:21.257" rpa="false" schemaversion="2">
-<suite id="s1" name="saleProducts" source="/CitiGoUI/retail/testcases/products/saleProducts.robot">
+<robot generator="Robot 4.1.1 (Python 3.9.7 on darwin)" generated="20211031 10:42:56.912" rpa="false" schemaversion="2">
+<suite id="s1" name="printProducts" source="/CitiGoUI/retail/testcases/products/printProducts.robot">
 <test id="s1-t1" name="Valid Login">
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>${DELAY}</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211025 16:33:21.779" endtime="20211025 16:33:21.779"/>
+<status status="PASS" starttime="20211031 10:42:57.139" endtime="20211031 10:42:57.139"/>
 </kw>
 <kw name="Open Browser To Login Page" library="loginPO">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211025 16:33:21.780" level="INFO">Opening browser 'Chrome' to base url 'https://tienphp01.kiotviet.vn/man/#/login'.</msg>
-<status status="PASS" starttime="20211025 16:33:21.780" endtime="20211025 16:33:26.621"/>
+<msg timestamp="20211031 10:42:57.140" level="INFO">Opening browser 'Chrome' to base url 'https://saigondream01.kiotviet.vn/man/#/login'.</msg>
+<status status="PASS" starttime="20211031 10:42:57.140" endtime="20211031 10:43:02.766"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211025 16:33:26.622" endtime="20211025 16:33:27.280"/>
+<status status="PASS" starttime="20211031 10:43:02.767" endtime="20211031 10:43:03.411"/>
 </kw>
-<status status="PASS" starttime="20211025 16:33:21.779" endtime="20211025 16:33:27.280"/>
+<status status="PASS" starttime="20211031 10:42:57.139" endtime="20211031 10:43:03.411"/>
 </kw>
 <kw name="Input Username" library="loginPO">
-<arg>tienphp</arg>
+<arg>0984555475</arg>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${username_txt}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211025 16:33:27.282" level="INFO">Typing text 'tienphp' into text field '//input[@id='UserName']'.</msg>
-<status status="PASS" starttime="20211025 16:33:27.281" endtime="20211025 16:33:28.908"/>
+<msg timestamp="20211031 10:43:03.412" level="INFO">Typing text '0984555475' into text field '//input[@id='UserName']'.</msg>
+<status status="PASS" starttime="20211031 10:43:03.412" endtime="20211031 10:43:05.075"/>
 </kw>
-<status status="PASS" starttime="20211025 16:33:27.280" endtime="20211025 16:33:28.909"/>
+<status status="PASS" starttime="20211031 10:43:03.411" endtime="20211031 10:43:05.076"/>
 </kw>
 <kw name="Input Password" library="loginPO">
-<arg>Auto@123</arg>
+<arg>123456</arg>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${password_txt}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211025 16:33:28.910" level="INFO">Typing text 'Auto@123' into text field '//input[@id='Password']'.</msg>
-<status status="PASS" starttime="20211025 16:33:28.909" endtime="20211025 16:33:30.510"/>
+<msg timestamp="20211031 10:43:05.077" level="INFO">Typing text '123456' into text field '//input[@id='Password']'.</msg>
+<status status="PASS" starttime="20211031 10:43:05.076" endtime="20211031 10:43:06.669"/>
 </kw>
-<status status="PASS" starttime="20211025 16:33:28.909" endtime="20211025 16:33:30.510"/>
+<status status="PASS" starttime="20211031 10:43:05.076" endtime="20211031 10:43:06.669"/>
 </kw>
 <kw name="Submit Credentials" library="loginPO">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${login_btn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211025 16:33:30.511" level="INFO">Clicking button '//input[@name='quan-ly']'.</msg>
-<status status="PASS" starttime="20211025 16:33:30.511" endtime="20211025 16:33:32.076"/>
+<msg timestamp="20211031 10:43:06.671" level="INFO">Clicking button '//input[@name='quan-ly']'.</msg>
+<status status="PASS" starttime="20211031 10:43:06.670" endtime="20211031 10:43:08.246"/>
 </kw>
-<status status="PASS" starttime="20211025 16:33:30.510" endtime="20211025 16:33:32.076"/>
+<status status="PASS" starttime="20211031 10:43:06.670" endtime="20211031 10:43:08.246"/>
 </kw>
 <kw name="Welcome Page Should Be Open" library="loginPO">
 <kw name="Sleep" library="BuiltIn">
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211025 16:33:42.079" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20211025 16:33:32.078" endtime="20211025 16:33:42.079"/>
+<msg timestamp="20211031 10:43:18.247" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20211031 10:43:08.247" endtime="20211031 10:43:18.248"/>
 </kw>
 <kw name="Location Should Be" library="SeleniumLibrary">
 <arg>${WELCOME URL}</arg>
 <doc>Verifies that the current URL is exactly ``url``.</doc>
-<msg timestamp="20211025 16:33:42.596" level="INFO">Current location is 'https://tienphp01.kiotviet.vn/man/#/DashBoard'.</msg>
-<status status="PASS" starttime="20211025 16:33:42.079" endtime="20211025 16:33:42.596"/>
+<msg timestamp="20211031 10:43:18.763" level="INFO">Current location is 'https://saigondream01.kiotviet.vn/man/#/DashBoard'.</msg>
+<status status="PASS" starttime="20211031 10:43:18.248" endtime="20211031 10:43:18.763"/>
 </kw>
-<status status="PASS" starttime="20211025 16:33:32.077" endtime="20211025 16:33:42.596"/>
+<status status="PASS" starttime="20211031 10:43:08.246" endtime="20211031 10:43:18.763"/>
 </kw>
-<status status="PASS" starttime="20211025 16:33:21.778" endtime="20211025 16:33:42.597"/>
+<status status="PASS" starttime="20211031 10:42:57.138" endtime="20211031 10:43:18.763"/>
 </test>
-<test id="s1-t2" name="Add new product">
-<kw name="Navigate to products page" library="listProductsPO">
-<kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211025 16:33:47.600" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20211025 16:33:42.599" endtime="20211025 16:33:47.600"/>
-</kw>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>${PRODUCTS URL}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20211025 16:33:47.601" level="INFO">Opening url 'https://tienphp01.kiotviet.vn/man/#/Products'</msg>
-<status status="PASS" starttime="20211025 16:33:47.601" endtime="20211025 16:33:48.564"/>
-</kw>
-<status status="PASS" starttime="20211025 16:33:42.598" endtime="20211025 16:33:48.564"/>
-</kw>
-<kw name="Hover to add new button" library="listProductsPO">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${addProduct_btn}</arg>
-<arg>1 mins</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211025 16:33:48.565" endtime="20211025 16:33:49.600"/>
-</kw>
-<kw name="Mouse Over" library="SeleniumLibrary">
-<arg>${addProduct_btn}</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20211025 16:33:49.601" level="INFO">Simulating Mouse Over on element '//div[@class='addProductBtn']'.</msg>
-<status status="PASS" starttime="20211025 16:33:49.600" endtime="20211025 16:33:50.919"/>
-</kw>
-<status status="PASS" starttime="20211025 16:33:48.565" endtime="20211025 16:33:50.920"/>
-</kw>
-<kw name="Click add new products label" library="listProductsPO">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${addProduct_btn}</arg>
-<arg>1 mins</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211025 16:33:50.921" endtime="20211025 16:33:51.952"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${addProduct_lbl}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211025 16:33:51.953" level="INFO">Clicking element '//a[@ng-click='AddProduct(pTypeValue.Purchased)']'.</msg>
-<status status="PASS" starttime="20211025 16:33:51.953" endtime="20211025 16:33:53.747"/>
-</kw>
-<status status="PASS" starttime="20211025 16:33:50.920" endtime="20211025 16:33:53.747"/>
-</kw>
-<kw name="Input name product" library="addProductsPO">
-<arg>sp_test</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${name_product_txt}</arg>
-<arg>${name_product}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211025 16:33:53.749" level="INFO">Typing text 'sp_test' into text field '//input[@id='idSuggestProductNameSearchTerm']'.</msg>
-<status status="PASS" starttime="20211025 16:33:53.748" endtime="20211025 16:33:55.420"/>
-</kw>
-<status status="PASS" starttime="20211025 16:33:53.748" endtime="20211025 16:33:55.420"/>
-</kw>
-<kw name="Click category product" library="addProductsPO">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${cate_product_cmb}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211025 16:33:55.422" level="INFO">Clicking element '//kv-category-dropdownlist[@selected-id='product.CategoryId']'.</msg>
-<status status="PASS" starttime="20211025 16:33:55.421" endtime="20211025 16:33:56.593"/>
-</kw>
-<status status="PASS" starttime="20211025 16:33:55.421" endtime="20211025 16:33:56.593"/>
-</kw>
-<kw name="Click name product" library="addProductsPO">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${name_product_lbl}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211025 16:33:56.595" level="INFO">Clicking element '(//div[@class='k-animation-container']//ul[@role='listbox']//li//span)[2]'.</msg>
-<status status="PASS" starttime="20211025 16:33:56.594" endtime="20211025 16:33:57.693"/>
-</kw>
-<status status="PASS" starttime="20211025 16:33:56.594" endtime="20211025 16:33:57.694"/>
-</kw>
-<kw name="Click save product" library="addProductsPO">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${save_product_btn}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211025 16:33:57.695" level="INFO">Clicking element '//a[@ng-enter='SaveProduct()']'.</msg>
-<status status="PASS" starttime="20211025 16:33:57.695" endtime="20211025 16:33:58.788"/>
-</kw>
-<status status="PASS" starttime="20211025 16:33:57.694" endtime="20211025 16:33:58.788"/>
-</kw>
-<kw name="Verify save message success" library="addProductsPO">
-<arg>Hàng hóa đã được tạo thành công</arg>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${mess_success_lbl}</arg>
-<arg>40s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211025 16:33:58.790" endtime="20211025 16:34:00.034"/>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>${mess_success_lbl}</arg>
-<arg>${mess_success}</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20211025 16:34:01.719" level="INFO">Element '//div[@class='toast-message']' contains text 'Hàng hóa đã được tạo thành công'.</msg>
-<status status="PASS" starttime="20211025 16:34:00.034" endtime="20211025 16:34:01.719"/>
-</kw>
-<status status="PASS" starttime="20211025 16:33:58.789" endtime="20211025 16:34:01.719"/>
-</kw>
-<status status="PASS" starttime="20211025 16:33:42.598" endtime="20211025 16:34:01.720"/>
-</test>
-<test id="s1-t3" name="Sale product">
+<test id="s1-t2" name="Verify print product page">
 <kw name="Navigate to sale page" library="salePO">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${SALE URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20211025 16:34:01.721" level="INFO">Opening url 'https://tienphp01.kiotviet.vn/newsale/#/'</msg>
-<status status="PASS" starttime="20211025 16:34:01.721" endtime="20211025 16:34:03.635"/>
+<msg timestamp="20211031 10:43:18.766" level="INFO">Opening url 'https://saigondream01.kiotviet.vn/newsale/#/'</msg>
+<status status="PASS" starttime="20211031 10:43:18.766" endtime="20211031 10:43:21.063"/>
 </kw>
-<status status="PASS" starttime="20211025 16:34:01.721" endtime="20211025 16:34:03.635"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211025 16:34:08.637" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20211025 16:34:03.636" endtime="20211025 16:34:08.637"/>
-</kw>
-<kw name="Reload Page" library="SeleniumLibrary">
-<doc>Simulates user reloading page.</doc>
-<status status="PASS" starttime="20211025 16:34:08.638" endtime="20211025 16:34:09.165"/>
+<status status="PASS" starttime="20211031 10:43:18.765" endtime="20211031 10:43:21.063"/>
 </kw>
 <kw name="Input product and discount and qty" library="salePO">
-<arg>SP000021</arg>
-<arg>1000</arg>
-<arg>2</arg>
+<arg>${product_id_input}</arg>
+<arg>${product_discount_input}</arg>
+<arg>${product_qty_input}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${search_product_txt}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211025 16:34:09.166" endtime="20211025 16:34:10.804"/>
+<status status="PASS" starttime="20211031 10:43:21.064" endtime="20211031 10:43:22.556"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${search_product_txt}</arg>
 <arg>${product_name}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211025 16:34:10.805" level="INFO">Typing text 'SP000021' into text field '//input[@id='productSearchInput']'.</msg>
-<status status="PASS" starttime="20211025 16:34:10.805" endtime="20211025 16:34:12.435"/>
+<msg timestamp="20211031 10:43:22.557" level="INFO">Typing text 'NAM001' into text field '//input[@id='productSearchInput']'.</msg>
+<status status="PASS" starttime="20211031 10:43:22.556" endtime="20211031 10:43:24.188"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>${search_product_txt}</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20211025 16:34:12.436" level="INFO">Sending key(s) ('ENTER',) to //input[@id='productSearchInput'] element.</msg>
-<msg timestamp="20211025 16:34:13.713" level="INFO">Pressing special key ENTER to element.</msg>
-<msg timestamp="20211025 16:34:13.713" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20211025 16:34:12.435" endtime="20211025 16:34:14.319"/>
+<msg timestamp="20211031 10:43:24.189" level="INFO">Sending key(s) ('ENTER',) to //input[@id='productSearchInput'] element.</msg>
+<msg timestamp="20211031 10:43:25.609" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20211031 10:43:25.609" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20211031 10:43:24.188" endtime="20211031 10:43:26.225"/>
 </kw>
 <kw name="Format String" library="StringFormat">
 <var>${product_discount_btn}</var>
 <arg>${product_discount_btn}</arg>
 <arg>${product_name}</arg>
-<msg timestamp="20211025 16:34:14.320" level="INFO">${product_discount_btn} = //div[contains(text(),'SP000021')]/../../..//button[@kv-popup-anchor='productPrice']</msg>
-<status status="PASS" starttime="20211025 16:34:14.319" endtime="20211025 16:34:14.320"/>
+<msg timestamp="20211031 10:43:26.226" level="INFO">${product_discount_btn} = //div[contains(text(),'NAM001')]/../../..//button[@kv-popup-anchor='productPrice']</msg>
+<status status="PASS" starttime="20211031 10:43:26.225" endtime="20211031 10:43:26.226"/>
 </kw>
 <kw name="Format String" library="StringFormat">
 <var>${product_update_qty_txt}</var>
 <arg>${product_update_qty_txt}</arg>
 <arg>${product_name}</arg>
-<msg timestamp="20211025 16:34:14.321" level="INFO">${product_update_qty_txt} = //div[contains(text(),'SP000021')]/../../..//input[@ng-model='item.Quantity']</msg>
-<status status="PASS" starttime="20211025 16:34:14.320" endtime="20211025 16:34:14.321"/>
+<msg timestamp="20211031 10:43:26.227" level="INFO">${product_update_qty_txt} = //div[contains(text(),'NAM001')]/../../..//input[@ng-model='item.Quantity']</msg>
+<status status="PASS" starttime="20211031 10:43:26.226" endtime="20211031 10:43:26.227"/>
 </kw>
 <kw name="Click Element JS" library="javascript">
 <arg>${product_discount_btn}</arg>
@@ -237,507 +124,41 @@
 <arg>${xpathElement}</arg>
 <arg>30s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211025 16:34:14.322" endtime="20211025 16:34:14.836"/>
+<status status="PASS" starttime="20211031 10:43:26.228" endtime="20211031 10:43:26.748"/>
 </kw>
 <kw name="Format String" library="StringFormat">
 <var>${xpath}</var>
 <arg>${mes_click}</arg>
 <arg>${xpathElement}</arg>
-<msg timestamp="20211025 16:34:14.837" level="INFO">${xpath} = document.evaluate("//div[contains(text(),'SP000021')]/../../..//button[@kv-popup-anchor='productPrice']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</msg>
-<status status="PASS" starttime="20211025 16:34:14.836" endtime="20211025 16:34:14.837"/>
+<msg timestamp="20211031 10:43:26.749" level="INFO">${xpath} = document.evaluate("//div[contains(text(),'NAM001')]/../../..//button[@kv-popup-anchor='productPrice']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</msg>
+<status status="PASS" starttime="20211031 10:43:26.748" endtime="20211031 10:43:26.749"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>${xpath}</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20211025 16:34:14.837" level="INFO">Executing JavaScript:
-document.evaluate("//div[contains(text(),'SP000021')]/../../..//button[@kv-popup-anchor='productPrice']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
+<msg timestamp="20211031 10:43:26.750" level="INFO">Executing JavaScript:
+document.evaluate("//div[contains(text(),'NAM001')]/../../..//button[@kv-popup-anchor='productPrice']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
 Without any arguments.</msg>
-<status status="PASS" starttime="20211025 16:34:14.837" endtime="20211025 16:34:15.369"/>
+<status status="PASS" starttime="20211031 10:43:26.749" endtime="20211031 10:43:27.288"/>
 </kw>
 <timeout value="15 seconds"/>
-<status status="PASS" starttime="20211025 16:34:14.321" endtime="20211025 16:34:15.369"/>
+<status status="PASS" starttime="20211031 10:43:26.227" endtime="20211031 10:43:27.288"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${product_discount_txt}</arg>
 <arg>${product_discount}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211025 16:34:15.370" level="INFO">Typing text '1000' into text field '//input[@id='priceInput']'.</msg>
-<status status="PASS" starttime="20211025 16:34:15.369" endtime="20211025 16:34:17.194"/>
+<msg timestamp="20211031 10:43:27.289" level="INFO">Typing text '899000' into text field '//input[@id='priceInput']'.</msg>
+<status status="PASS" starttime="20211031 10:43:27.288" endtime="20211031 10:43:28.912"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${product_update_qty_txt}</arg>
 <arg>${product_qty}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211025 16:34:17.195" level="INFO">Typing text '2' into text field '//div[contains(text(),'SP000021')]/../../..//input[@ng-model='item.Quantity']'.</msg>
-<status status="PASS" starttime="20211025 16:34:17.194" endtime="20211025 16:34:18.819"/>
+<msg timestamp="20211031 10:43:28.913" level="INFO">Typing text '2' into text field '//div[contains(text(),'NAM001')]/../../..//input[@ng-model='item.Quantity']'.</msg>
+<status status="PASS" starttime="20211031 10:43:28.912" endtime="20211031 10:43:30.572"/>
 </kw>
-<status status="PASS" starttime="20211025 16:34:09.165" endtime="20211025 16:34:18.819"/>
-</kw>
-<kw name="Input product and discount and qty" library="salePO">
-<arg>SP000022</arg>
-<arg>2000</arg>
-<arg>3</arg>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${search_product_txt}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211025 16:34:18.820" endtime="20211025 16:34:19.847"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${search_product_txt}</arg>
-<arg>${product_name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211025 16:34:19.848" level="INFO">Typing text 'SP000022' into text field '//input[@id='productSearchInput']'.</msg>
-<status status="PASS" starttime="20211025 16:34:19.848" endtime="20211025 16:34:21.545"/>
-</kw>
-<kw name="Press Keys" library="SeleniumLibrary">
-<arg>${search_product_txt}</arg>
-<arg>ENTER</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20211025 16:34:21.546" level="INFO">Sending key(s) ('ENTER',) to //input[@id='productSearchInput'] element.</msg>
-<msg timestamp="20211025 16:34:22.851" level="INFO">Pressing special key ENTER to element.</msg>
-<msg timestamp="20211025 16:34:22.851" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20211025 16:34:21.545" endtime="20211025 16:34:23.413"/>
-</kw>
-<kw name="Format String" library="StringFormat">
-<var>${product_discount_btn}</var>
-<arg>${product_discount_btn}</arg>
-<arg>${product_name}</arg>
-<msg timestamp="20211025 16:34:23.414" level="INFO">${product_discount_btn} = //div[contains(text(),'SP000022')]/../../..//button[@kv-popup-anchor='productPrice']</msg>
-<status status="PASS" starttime="20211025 16:34:23.414" endtime="20211025 16:34:23.414"/>
-</kw>
-<kw name="Format String" library="StringFormat">
-<var>${product_update_qty_txt}</var>
-<arg>${product_update_qty_txt}</arg>
-<arg>${product_name}</arg>
-<msg timestamp="20211025 16:34:23.415" level="INFO">${product_update_qty_txt} = //div[contains(text(),'SP000022')]/../../..//input[@ng-model='item.Quantity']</msg>
-<status status="PASS" starttime="20211025 16:34:23.414" endtime="20211025 16:34:23.415"/>
-</kw>
-<kw name="Click Element JS" library="javascript">
-<arg>${product_discount_btn}</arg>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${xpathElement}</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211025 16:34:23.415" endtime="20211025 16:34:23.926"/>
-</kw>
-<kw name="Format String" library="StringFormat">
-<var>${xpath}</var>
-<arg>${mes_click}</arg>
-<arg>${xpathElement}</arg>
-<msg timestamp="20211025 16:34:23.928" level="INFO">${xpath} = document.evaluate("//div[contains(text(),'SP000022')]/../../..//button[@kv-popup-anchor='productPrice']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</msg>
-<status status="PASS" starttime="20211025 16:34:23.927" endtime="20211025 16:34:23.929"/>
-</kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20211025 16:34:23.930" level="INFO">Executing JavaScript:
-document.evaluate("//div[contains(text(),'SP000022')]/../../..//button[@kv-popup-anchor='productPrice']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
-Without any arguments.</msg>
-<status status="PASS" starttime="20211025 16:34:23.929" endtime="20211025 16:34:24.439"/>
-</kw>
-<timeout value="15 seconds"/>
-<status status="PASS" starttime="20211025 16:34:23.415" endtime="20211025 16:34:24.439"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${product_discount_txt}</arg>
-<arg>${product_discount}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211025 16:34:24.440" level="INFO">Typing text '2000' into text field '//input[@id='priceInput']'.</msg>
-<status status="PASS" starttime="20211025 16:34:24.440" endtime="20211025 16:34:26.033"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${product_update_qty_txt}</arg>
-<arg>${product_qty}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211025 16:34:26.034" level="INFO">Typing text '3' into text field '//div[contains(text(),'SP000022')]/../../..//input[@ng-model='item.Quantity']'.</msg>
-<status status="PASS" starttime="20211025 16:34:26.034" endtime="20211025 16:34:27.652"/>
-</kw>
-<status status="PASS" starttime="20211025 16:34:18.819" endtime="20211025 16:34:27.653"/>
-</kw>
-<kw name="Input product and discount and qty" library="salePO">
-<arg>SP000023</arg>
-<arg>3000</arg>
-<arg>4</arg>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${search_product_txt}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211025 16:34:27.654" endtime="20211025 16:34:28.677"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${search_product_txt}</arg>
-<arg>${product_name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211025 16:34:28.678" level="INFO">Typing text 'SP000023' into text field '//input[@id='productSearchInput']'.</msg>
-<status status="PASS" starttime="20211025 16:34:28.677" endtime="20211025 16:34:30.302"/>
-</kw>
-<kw name="Press Keys" library="SeleniumLibrary">
-<arg>${search_product_txt}</arg>
-<arg>ENTER</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20211025 16:34:30.303" level="INFO">Sending key(s) ('ENTER',) to //input[@id='productSearchInput'] element.</msg>
-<msg timestamp="20211025 16:34:31.581" level="INFO">Pressing special key ENTER to element.</msg>
-<msg timestamp="20211025 16:34:31.581" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20211025 16:34:30.303" endtime="20211025 16:34:32.146"/>
-</kw>
-<kw name="Format String" library="StringFormat">
-<var>${product_discount_btn}</var>
-<arg>${product_discount_btn}</arg>
-<arg>${product_name}</arg>
-<msg timestamp="20211025 16:34:32.147" level="INFO">${product_discount_btn} = //div[contains(text(),'SP000023')]/../../..//button[@kv-popup-anchor='productPrice']</msg>
-<status status="PASS" starttime="20211025 16:34:32.146" endtime="20211025 16:34:32.147"/>
-</kw>
-<kw name="Format String" library="StringFormat">
-<var>${product_update_qty_txt}</var>
-<arg>${product_update_qty_txt}</arg>
-<arg>${product_name}</arg>
-<msg timestamp="20211025 16:34:32.148" level="INFO">${product_update_qty_txt} = //div[contains(text(),'SP000023')]/../../..//input[@ng-model='item.Quantity']</msg>
-<status status="PASS" starttime="20211025 16:34:32.147" endtime="20211025 16:34:32.148"/>
-</kw>
-<kw name="Click Element JS" library="javascript">
-<arg>${product_discount_btn}</arg>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${xpathElement}</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211025 16:34:32.149" endtime="20211025 16:34:32.665"/>
-</kw>
-<kw name="Format String" library="StringFormat">
-<var>${xpath}</var>
-<arg>${mes_click}</arg>
-<arg>${xpathElement}</arg>
-<msg timestamp="20211025 16:34:32.666" level="INFO">${xpath} = document.evaluate("//div[contains(text(),'SP000023')]/../../..//button[@kv-popup-anchor='productPrice']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</msg>
-<status status="PASS" starttime="20211025 16:34:32.665" endtime="20211025 16:34:32.666"/>
-</kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20211025 16:34:32.668" level="INFO">Executing JavaScript:
-document.evaluate("//div[contains(text(),'SP000023')]/../../..//button[@kv-popup-anchor='productPrice']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
-Without any arguments.</msg>
-<status status="PASS" starttime="20211025 16:34:32.667" endtime="20211025 16:34:33.180"/>
-</kw>
-<timeout value="15 seconds"/>
-<status status="PASS" starttime="20211025 16:34:32.148" endtime="20211025 16:34:33.180"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${product_discount_txt}</arg>
-<arg>${product_discount}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211025 16:34:33.181" level="INFO">Typing text '3000' into text field '//input[@id='priceInput']'.</msg>
-<status status="PASS" starttime="20211025 16:34:33.181" endtime="20211025 16:34:34.789"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${product_update_qty_txt}</arg>
-<arg>${product_qty}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211025 16:34:34.790" level="INFO">Typing text '4' into text field '//div[contains(text(),'SP000023')]/../../..//input[@ng-model='item.Quantity']'.</msg>
-<status status="PASS" starttime="20211025 16:34:34.789" endtime="20211025 16:34:36.409"/>
-</kw>
-<status status="PASS" starttime="20211025 16:34:27.653" endtime="20211025 16:34:36.410"/>
-</kw>
-<kw name="Input product and discount and qty" library="salePO">
-<arg>SP000024</arg>
-<arg>4000</arg>
-<arg>5</arg>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${search_product_txt}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211025 16:34:36.411" endtime="20211025 16:34:37.433"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${search_product_txt}</arg>
-<arg>${product_name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211025 16:34:37.434" level="INFO">Typing text 'SP000024' into text field '//input[@id='productSearchInput']'.</msg>
-<status status="PASS" starttime="20211025 16:34:37.433" endtime="20211025 16:34:39.069"/>
-</kw>
-<kw name="Press Keys" library="SeleniumLibrary">
-<arg>${search_product_txt}</arg>
-<arg>ENTER</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20211025 16:34:39.070" level="INFO">Sending key(s) ('ENTER',) to //input[@id='productSearchInput'] element.</msg>
-<msg timestamp="20211025 16:34:40.356" level="INFO">Pressing special key ENTER to element.</msg>
-<msg timestamp="20211025 16:34:40.356" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20211025 16:34:39.069" endtime="20211025 16:34:40.920"/>
-</kw>
-<kw name="Format String" library="StringFormat">
-<var>${product_discount_btn}</var>
-<arg>${product_discount_btn}</arg>
-<arg>${product_name}</arg>
-<msg timestamp="20211025 16:34:40.921" level="INFO">${product_discount_btn} = //div[contains(text(),'SP000024')]/../../..//button[@kv-popup-anchor='productPrice']</msg>
-<status status="PASS" starttime="20211025 16:34:40.920" endtime="20211025 16:34:40.921"/>
-</kw>
-<kw name="Format String" library="StringFormat">
-<var>${product_update_qty_txt}</var>
-<arg>${product_update_qty_txt}</arg>
-<arg>${product_name}</arg>
-<msg timestamp="20211025 16:34:40.922" level="INFO">${product_update_qty_txt} = //div[contains(text(),'SP000024')]/../../..//input[@ng-model='item.Quantity']</msg>
-<status status="PASS" starttime="20211025 16:34:40.921" endtime="20211025 16:34:40.922"/>
-</kw>
-<kw name="Click Element JS" library="javascript">
-<arg>${product_discount_btn}</arg>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${xpathElement}</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211025 16:34:40.923" endtime="20211025 16:34:41.440"/>
-</kw>
-<kw name="Format String" library="StringFormat">
-<var>${xpath}</var>
-<arg>${mes_click}</arg>
-<arg>${xpathElement}</arg>
-<msg timestamp="20211025 16:34:41.441" level="INFO">${xpath} = document.evaluate("//div[contains(text(),'SP000024')]/../../..//button[@kv-popup-anchor='productPrice']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</msg>
-<status status="PASS" starttime="20211025 16:34:41.441" endtime="20211025 16:34:41.442"/>
-</kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20211025 16:34:41.443" level="INFO">Executing JavaScript:
-document.evaluate("//div[contains(text(),'SP000024')]/../../..//button[@kv-popup-anchor='productPrice']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
-Without any arguments.</msg>
-<status status="PASS" starttime="20211025 16:34:41.442" endtime="20211025 16:34:41.957"/>
-</kw>
-<timeout value="15 seconds"/>
-<status status="PASS" starttime="20211025 16:34:40.922" endtime="20211025 16:34:41.957"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${product_discount_txt}</arg>
-<arg>${product_discount}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211025 16:34:41.958" level="INFO">Typing text '4000' into text field '//input[@id='priceInput']'.</msg>
-<status status="PASS" starttime="20211025 16:34:41.958" endtime="20211025 16:34:43.568"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${product_update_qty_txt}</arg>
-<arg>${product_qty}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211025 16:34:43.569" level="INFO">Typing text '5' into text field '//div[contains(text(),'SP000024')]/../../..//input[@ng-model='item.Quantity']'.</msg>
-<status status="PASS" starttime="20211025 16:34:43.569" endtime="20211025 16:34:45.186"/>
-</kw>
-<status status="PASS" starttime="20211025 16:34:36.410" endtime="20211025 16:34:45.186"/>
-</kw>
-<kw name="Input product and discount and qty" library="salePO">
-<arg>SP000025</arg>
-<arg>5000</arg>
-<arg>6</arg>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${search_product_txt}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211025 16:34:45.187" endtime="20211025 16:34:46.209"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${search_product_txt}</arg>
-<arg>${product_name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211025 16:34:46.211" level="INFO">Typing text 'SP000025' into text field '//input[@id='productSearchInput']'.</msg>
-<status status="PASS" starttime="20211025 16:34:46.210" endtime="20211025 16:34:47.848"/>
-</kw>
-<kw name="Press Keys" library="SeleniumLibrary">
-<arg>${search_product_txt}</arg>
-<arg>ENTER</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20211025 16:34:47.850" level="INFO">Sending key(s) ('ENTER',) to //input[@id='productSearchInput'] element.</msg>
-<msg timestamp="20211025 16:34:49.135" level="INFO">Pressing special key ENTER to element.</msg>
-<msg timestamp="20211025 16:34:49.135" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20211025 16:34:47.849" endtime="20211025 16:34:49.705"/>
-</kw>
-<kw name="Format String" library="StringFormat">
-<var>${product_discount_btn}</var>
-<arg>${product_discount_btn}</arg>
-<arg>${product_name}</arg>
-<msg timestamp="20211025 16:34:49.707" level="INFO">${product_discount_btn} = //div[contains(text(),'SP000025')]/../../..//button[@kv-popup-anchor='productPrice']</msg>
-<status status="PASS" starttime="20211025 16:34:49.706" endtime="20211025 16:34:49.707"/>
-</kw>
-<kw name="Format String" library="StringFormat">
-<var>${product_update_qty_txt}</var>
-<arg>${product_update_qty_txt}</arg>
-<arg>${product_name}</arg>
-<msg timestamp="20211025 16:34:49.707" level="INFO">${product_update_qty_txt} = //div[contains(text(),'SP000025')]/../../..//input[@ng-model='item.Quantity']</msg>
-<status status="PASS" starttime="20211025 16:34:49.707" endtime="20211025 16:34:49.707"/>
-</kw>
-<kw name="Click Element JS" library="javascript">
-<arg>${product_discount_btn}</arg>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${xpathElement}</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211025 16:34:49.709" endtime="20211025 16:34:50.226"/>
-</kw>
-<kw name="Format String" library="StringFormat">
-<var>${xpath}</var>
-<arg>${mes_click}</arg>
-<arg>${xpathElement}</arg>
-<msg timestamp="20211025 16:34:50.227" level="INFO">${xpath} = document.evaluate("//div[contains(text(),'SP000025')]/../../..//button[@kv-popup-anchor='productPrice']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</msg>
-<status status="PASS" starttime="20211025 16:34:50.226" endtime="20211025 16:34:50.227"/>
-</kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20211025 16:34:50.229" level="INFO">Executing JavaScript:
-document.evaluate("//div[contains(text(),'SP000025')]/../../..//button[@kv-popup-anchor='productPrice']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
-Without any arguments.</msg>
-<status status="PASS" starttime="20211025 16:34:50.228" endtime="20211025 16:34:50.738"/>
-</kw>
-<timeout value="15 seconds"/>
-<status status="PASS" starttime="20211025 16:34:49.708" endtime="20211025 16:34:50.738"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${product_discount_txt}</arg>
-<arg>${product_discount}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211025 16:34:50.739" level="INFO">Typing text '5000' into text field '//input[@id='priceInput']'.</msg>
-<status status="PASS" starttime="20211025 16:34:50.738" endtime="20211025 16:34:52.355"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${product_update_qty_txt}</arg>
-<arg>${product_qty}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211025 16:34:52.356" level="INFO">Typing text '6' into text field '//div[contains(text(),'SP000025')]/../../..//input[@ng-model='item.Quantity']'.</msg>
-<status status="PASS" starttime="20211025 16:34:52.355" endtime="20211025 16:34:53.978"/>
-</kw>
-<status status="PASS" starttime="20211025 16:34:45.186" endtime="20211025 16:34:53.979"/>
-</kw>
-<kw name="Input invoice discount" library="salePO">
-<arg>11000</arg>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211025 16:34:55.983" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211025 16:34:53.980" endtime="20211025 16:34:55.983"/>
-</kw>
-<kw name="Click Element JS" library="javascript">
-<arg>${invoice_discount_btn}</arg>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${xpathElement}</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211025 16:34:55.984" endtime="20211025 16:34:56.495"/>
-</kw>
-<kw name="Format String" library="StringFormat">
-<var>${xpath}</var>
-<arg>${mes_click}</arg>
-<arg>${xpathElement}</arg>
-<msg timestamp="20211025 16:34:56.496" level="INFO">${xpath} = document.evaluate("//button[contains(@uib-popover-template,'discountInvoiceCartTpl')]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</msg>
-<status status="PASS" starttime="20211025 16:34:56.495" endtime="20211025 16:34:56.496"/>
-</kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20211025 16:34:56.496" level="INFO">Executing JavaScript:
-document.evaluate("//button[contains(@uib-popover-template,'discountInvoiceCartTpl')]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
-Without any arguments.</msg>
-<status status="PASS" starttime="20211025 16:34:56.496" endtime="20211025 16:34:57.061"/>
-</kw>
-<timeout value="15 seconds"/>
-<status status="PASS" starttime="20211025 16:34:55.983" endtime="20211025 16:34:57.061"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${invoice_discount_txt}</arg>
-<arg>${invoice_discount}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211025 16:34:57.062" level="INFO">Typing text '11000' into text field '//input[@id='popover-discountValue']'.</msg>
-<status status="PASS" starttime="20211025 16:34:57.061" endtime="20211025 16:34:58.668"/>
-</kw>
-<status status="PASS" starttime="20211025 16:34:53.979" endtime="20211025 16:34:58.668"/>
-</kw>
-<kw name="Click add new customer" library="salePO">
-<kw name="Click Element JS" library="javascript">
-<arg>${customer_add_new_btn}</arg>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${xpathElement}</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211025 16:34:58.671" endtime="20211025 16:34:59.188"/>
-</kw>
-<kw name="Format String" library="StringFormat">
-<var>${xpath}</var>
-<arg>${mes_click}</arg>
-<arg>${xpathElement}</arg>
-<msg timestamp="20211025 16:34:59.190" level="INFO">${xpath} = document.evaluate("//button[@id='addCustomer']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</msg>
-<status status="PASS" starttime="20211025 16:34:59.189" endtime="20211025 16:34:59.190"/>
-</kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20211025 16:34:59.191" level="INFO">Executing JavaScript:
-document.evaluate("//button[@id='addCustomer']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
-Without any arguments.</msg>
-<status status="PASS" starttime="20211025 16:34:59.190" endtime="20211025 16:34:59.865"/>
-</kw>
-<timeout value="15 seconds"/>
-<status status="PASS" starttime="20211025 16:34:58.670" endtime="20211025 16:34:59.865"/>
-</kw>
-<status status="PASS" starttime="20211025 16:34:58.669" endtime="20211025 16:34:59.865"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${phone}</var>
-<arg>random.sample(range(1, 10),4)</arg>
-<arg>random</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211025 16:34:59.866" level="INFO">${phone} = [4, 7, 1, 3]</msg>
-<status status="PASS" starttime="20211025 16:34:59.866" endtime="20211025 16:34:59.867"/>
-</kw>
-<kw name="Input new customer" library="addNewCustomerPO">
-<arg>mr.tien</arg>
-<arg>${phone}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${customer_name_txt}</arg>
-<arg>${customer_name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211025 16:34:59.868" level="INFO">Typing text 'mr.tien' into text field '//input[@id='customerName']'.</msg>
-<status status="PASS" starttime="20211025 16:34:59.868" endtime="20211025 16:35:01.492"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${customer_phone_txt}</arg>
-<arg>${customer_phone}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211025 16:35:01.493" level="INFO">Typing text '[4, 7, 1, 3]' into text field '//input[contains(@ng-model,'ContactNumber')]'.</msg>
-<status status="PASS" starttime="20211025 16:35:01.493" endtime="20211025 16:35:03.147"/>
-</kw>
-<kw name="Click Element JS" library="javascript">
-<arg>${customer_save_btn}</arg>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${xpathElement}</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211025 16:35:03.149" endtime="20211025 16:35:03.663"/>
-</kw>
-<kw name="Format String" library="StringFormat">
-<var>${xpath}</var>
-<arg>${mes_click}</arg>
-<arg>${xpathElement}</arg>
-<msg timestamp="20211025 16:35:03.665" level="INFO">${xpath} = document.evaluate("//a[@id='saveCusBtn']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</msg>
-<status status="PASS" starttime="20211025 16:35:03.664" endtime="20211025 16:35:03.665"/>
-</kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20211025 16:35:03.666" level="INFO">Executing JavaScript:
-document.evaluate("//a[@id='saveCusBtn']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
-Without any arguments.</msg>
-<status status="PASS" starttime="20211025 16:35:03.665" endtime="20211025 16:35:04.224"/>
-</kw>
-<timeout value="15 seconds"/>
-<status status="PASS" starttime="20211025 16:35:03.148" endtime="20211025 16:35:04.224"/>
-</kw>
-<status status="PASS" starttime="20211025 16:34:59.867" endtime="20211025 16:35:04.224"/>
-</kw>
-<kw name="Verify save message success" library="addProductsPO">
-<arg>Thông tin khách hàng được cập nhật thành công.</arg>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${mess_success_lbl}</arg>
-<arg>40s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211025 16:35:04.225" endtime="20211025 16:35:04.741"/>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>${mess_success_lbl}</arg>
-<arg>${mess_success}</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20211025 16:35:05.772" level="INFO">Element '//div[@class='toast-message']' contains text 'Thông tin khách hàng được cập nhật thành công.'.</msg>
-<status status="PASS" starttime="20211025 16:35:04.742" endtime="20211025 16:35:05.772"/>
-</kw>
-<status status="PASS" starttime="20211025 16:35:04.225" endtime="20211025 16:35:05.772"/>
+<status status="PASS" starttime="20211031 10:43:21.064" endtime="20211031 10:43:30.572"/>
 </kw>
 <kw name="Get total customer pay" library="salePO">
 <var>${total_customer_pay}</var>
@@ -745,98 +166,513 @@ Without any arguments.</msg>
 <var>${total}</var>
 <arg>${total_pay_lbl}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20211025 16:35:06.807" level="INFO">${total} = 2,119,000</msg>
-<status status="PASS" starttime="20211025 16:35:05.773" endtime="20211025 16:35:06.807"/>
+<msg timestamp="20211031 10:43:31.602" level="INFO">${total} = 6,000,000</msg>
+<status status="PASS" starttime="20211031 10:43:30.573" endtime="20211031 10:43:31.602"/>
 </kw>
 <kw name="Return From Keyword" library="BuiltIn">
 <arg>${total}</arg>
 <doc>Returns from the enclosing user keyword.</doc>
-<msg timestamp="20211025 16:35:06.808" level="INFO">Returning from the enclosing user keyword.</msg>
-<status status="PASS" starttime="20211025 16:35:06.808" endtime="20211025 16:35:06.809"/>
+<msg timestamp="20211031 10:43:31.602" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20211031 10:43:31.602" endtime="20211031 10:43:31.603"/>
 </kw>
-<msg timestamp="20211025 16:35:06.809" level="INFO">${total_customer_pay} = 2,119,000</msg>
-<status status="PASS" starttime="20211025 16:35:05.773" endtime="20211025 16:35:06.809"/>
+<msg timestamp="20211031 10:43:31.603" level="INFO">${total_customer_pay} = 6,000,000</msg>
+<status status="PASS" starttime="20211031 10:43:30.572" endtime="20211031 10:43:31.603"/>
 </kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3 times</arg>
+<arg>5s</arg>
+<arg>Click Pay Button</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
 <kw name="Click Pay Button" library="salePO">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${pay_btn}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211031 10:43:31.604" endtime="20211031 10:43:32.637"/>
+</kw>
 <kw name="Click Element JS" library="javascript">
 <arg>${pay_btn}</arg>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${xpathElement}</arg>
 <arg>30s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211025 16:35:06.810" endtime="20211025 16:35:07.324"/>
+<status status="PASS" starttime="20211031 10:43:32.639" endtime="20211031 10:43:33.151"/>
 </kw>
 <kw name="Format String" library="StringFormat">
 <var>${xpath}</var>
 <arg>${mes_click}</arg>
 <arg>${xpathElement}</arg>
-<msg timestamp="20211025 16:35:07.326" level="INFO">${xpath} = document.evaluate("//button[@id='saveTransaction']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</msg>
-<status status="PASS" starttime="20211025 16:35:07.325" endtime="20211025 16:35:07.326"/>
+<msg timestamp="20211031 10:43:33.152" level="INFO">${xpath} = document.evaluate("//button[@id='saveTransaction']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</msg>
+<status status="PASS" starttime="20211031 10:43:33.151" endtime="20211031 10:43:33.152"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>${xpath}</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20211025 16:35:07.327" level="INFO">Executing JavaScript:
+<msg timestamp="20211031 10:43:33.153" level="INFO">Executing JavaScript:
 document.evaluate("//button[@id='saveTransaction']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
 Without any arguments.</msg>
-<status status="PASS" starttime="20211025 16:35:07.326" endtime="20211025 16:35:07.842"/>
+<status status="PASS" starttime="20211031 10:43:33.152" endtime="20211031 10:43:33.662"/>
 </kw>
 <timeout value="15 seconds"/>
-<status status="PASS" starttime="20211025 16:35:06.810" endtime="20211025 16:35:07.842"/>
+<status status="PASS" starttime="20211031 10:43:32.638" endtime="20211031 10:43:33.662"/>
 </kw>
-<status status="PASS" starttime="20211025 16:35:06.809" endtime="20211025 16:35:07.842"/>
+<status status="PASS" starttime="20211031 10:43:31.604" endtime="20211031 10:43:33.662"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
+<status status="PASS" starttime="20211031 10:43:31.604" endtime="20211031 10:43:33.662"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3 times</arg>
 <arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211025 16:35:12.843" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20211025 16:35:07.843" endtime="20211025 16:35:12.843"/>
+<arg>Switch Window</arg>
+<arg>NEW</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20211031 10:43:33.663" endtime="20211031 10:43:35.687"/>
 </kw>
+<status status="PASS" starttime="20211031 10:43:33.663" endtime="20211031 10:43:35.687"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//body</arg>
+<arg>ESCAPE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211031 10:43:35.689" level="INFO">Sending key(s) ('ESCAPE',) to //body element.</msg>
+<msg timestamp="20211031 10:43:36.982" level="INFO">Pressing special key ESCAPE to element.</msg>
+<msg timestamp="20211031 10:43:36.982" level="INFO">Releasing special key ESCAPE.</msg>
+<status status="PASS" starttime="20211031 10:43:35.688" endtime="20211031 10:43:37.502"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>MAIN</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20211031 10:43:37.503" endtime="20211031 10:43:38.522"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<var>${invoice_id}</var>
+<arg>3 times</arg>
+<arg>5s</arg>
+<arg>get saved code after execute</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Get saved code after execute" library="javascript">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<var>${saved_code}</var>
+<arg>return window.document.getElementById('kvSavedCode').textContent;</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20211031 10:43:38.525" level="INFO">Executing JavaScript:
+return window.document.getElementById('kvSavedCode').textContent;
+Without any arguments.</msg>
+<msg timestamp="20211031 10:43:39.031" level="INFO">${saved_code} = HD000104</msg>
+<status status="PASS" starttime="20211031 10:43:38.524" endtime="20211031 10:43:39.032"/>
+</kw>
+<kw name="Return From Keyword" library="BuiltIn">
+<arg>${saved_code}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<msg timestamp="20211031 10:43:39.032" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20211031 10:43:39.032" endtime="20211031 10:43:39.032"/>
+</kw>
+<status status="PASS" starttime="20211031 10:43:38.523" endtime="20211031 10:43:39.033"/>
+</kw>
+<msg timestamp="20211031 10:43:39.033" level="INFO">${invoice_id} = HD000104</msg>
+<status status="PASS" starttime="20211031 10:43:38.522" endtime="20211031 10:43:39.033"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${invoice_id}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20211031 10:43:39.034" level="INFO">${invoice_id} = HD000104</msg>
+<status status="PASS" starttime="20211031 10:43:39.033" endtime="20211031 10:43:39.034"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>//iframe</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20211031 10:43:39.034" level="INFO">Selecting frame '//iframe'.</msg>
+<status status="PASS" starttime="20211031 10:43:39.034" endtime="20211031 10:43:40.068"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<var>${printer_name}</var>
+<var>${printer_price}</var>
+<var>${printer_qty}</var>
+<var>${printer_total_price}</var>
+<arg>3 times</arg>
+<arg>5s</arg>
+<arg>get product printer</arg>
+<arg>${product_name_input}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="get product printer" library="printInvoicesPO">
+<arg>${product_name_input}</arg>
+<kw name="Format String" library="StringFormat">
+<var>${xpath_product_name}</var>
+<arg>${product_name_lbl}</arg>
+<arg>${product_name_input}</arg>
+<msg timestamp="20211031 10:43:40.071" level="INFO">${xpath_product_name} = //div[@class='printBox']//*[contains(text(),'Áo vest nam màu xanh lá')]</msg>
+<status status="PASS" starttime="20211031 10:43:40.070" endtime="20211031 10:43:40.071"/>
+</kw>
+<kw name="Format String" library="StringFormat">
+<var>${xpath_product_price}</var>
+<arg>${product_with_lbl}</arg>
+<arg>${product_name_input}</arg>
+<arg>2</arg>
+<msg timestamp="20211031 10:43:40.072" level="INFO">${xpath_product_price} = (//div[@class='printBox']//*[contains(text(),'Áo vest nam màu xanh lá')]/parent::td/parent::tr//following::tr[1]//td//span)[2]</msg>
+<status status="PASS" starttime="20211031 10:43:40.071" endtime="20211031 10:43:40.072"/>
+</kw>
+<kw name="Format String" library="StringFormat">
+<var>${xpath_product_qty}</var>
+<arg>${product_with_lbl}</arg>
+<arg>${product_name_input}</arg>
+<arg>3</arg>
+<msg timestamp="20211031 10:43:40.072" level="INFO">${xpath_product_qty} = (//div[@class='printBox']//*[contains(text(),'Áo vest nam màu xanh lá')]/parent::td/parent::tr//following::tr[1]//td//span)[3]</msg>
+<status status="PASS" starttime="20211031 10:43:40.072" endtime="20211031 10:43:40.073"/>
+</kw>
+<kw name="Format String" library="StringFormat">
+<var>${xpath_product_total_price}</var>
+<arg>${product_with_lbl}</arg>
+<arg>${product_name_input}</arg>
+<arg>4</arg>
+<msg timestamp="20211031 10:43:40.073" level="INFO">${xpath_product_total_price} = (//div[@class='printBox']//*[contains(text(),'Áo vest nam màu xanh lá')]/parent::td/parent::tr//following::tr[1]//td//span)[4]</msg>
+<status status="PASS" starttime="20211031 10:43:40.073" endtime="20211031 10:43:40.073"/>
+</kw>
+<kw name="Get text JS" library="javascript">
+<var>${printer_name}</var>
+<arg>${xpath_product_name}</arg>
+<kw name="Format String" library="StringFormat">
+<var>${xpath}</var>
+<arg>${mes_getText}</arg>
+<arg>${xpathElement}</arg>
+<msg timestamp="20211031 10:43:40.074" level="INFO">${xpath} = return document.evaluate("//div[@class='printBox']//*[contains(text(),'Áo vest nam màu xanh lá')]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.innerText;</msg>
+<status status="PASS" starttime="20211031 10:43:40.074" endtime="20211031 10:43:40.074"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<var>${contain}</var>
+<arg>${xpath}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20211031 10:43:40.075" level="INFO">Executing JavaScript:
+return document.evaluate("//div[@class='printBox']//*[contains(text(),'Áo vest nam màu xanh lá')]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.innerText;
+Without any arguments.</msg>
+<msg timestamp="20211031 10:43:40.583" level="INFO">${contain} = Áo vest nam màu xanh lá</msg>
+<status status="PASS" starttime="20211031 10:43:40.075" endtime="20211031 10:43:40.584"/>
+</kw>
+<kw name="Return From Keyword" library="BuiltIn">
+<arg>${contain}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<msg timestamp="20211031 10:43:40.584" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20211031 10:43:40.584" endtime="20211031 10:43:40.585"/>
+</kw>
+<msg timestamp="20211031 10:43:40.585" level="INFO">${printer_name} = Áo vest nam màu xanh lá</msg>
+<status status="PASS" starttime="20211031 10:43:40.073" endtime="20211031 10:43:40.585"/>
+</kw>
+<kw name="Get text JS" library="javascript">
+<var>${printer_price}</var>
+<arg>${xpath_product_price}</arg>
+<kw name="Format String" library="StringFormat">
+<var>${xpath}</var>
+<arg>${mes_getText}</arg>
+<arg>${xpathElement}</arg>
+<msg timestamp="20211031 10:43:40.587" level="INFO">${xpath} = return document.evaluate("(//div[@class='printBox']//*[contains(text(),'Áo vest nam màu xanh lá')]/parent::td/parent::tr//following::tr[1]//td//span)[2]", document, null, XPathResult.FIRST_ORDERED_NOD...</msg>
+<status status="PASS" starttime="20211031 10:43:40.587" endtime="20211031 10:43:40.587"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<var>${contain}</var>
+<arg>${xpath}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20211031 10:43:40.588" level="INFO">Executing JavaScript:
+return document.evaluate("(//div[@class='printBox']//*[contains(text(),'Áo vest nam màu xanh lá')]/parent::td/parent::tr//following::tr[1]//td//span)[2]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.innerText;
+Without any arguments.</msg>
+<msg timestamp="20211031 10:43:41.099" level="INFO">${contain} = 3,899,000</msg>
+<status status="PASS" starttime="20211031 10:43:40.588" endtime="20211031 10:43:41.099"/>
+</kw>
+<kw name="Return From Keyword" library="BuiltIn">
+<arg>${contain}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<msg timestamp="20211031 10:43:41.100" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20211031 10:43:41.099" endtime="20211031 10:43:41.100"/>
+</kw>
+<msg timestamp="20211031 10:43:41.101" level="INFO">${printer_price} = 3,899,000</msg>
+<status status="PASS" starttime="20211031 10:43:40.586" endtime="20211031 10:43:41.101"/>
+</kw>
+<kw name="Get text JS" library="javascript">
+<var>${printer_qty}</var>
+<arg>${xpath_product_qty}</arg>
+<kw name="Format String" library="StringFormat">
+<var>${xpath}</var>
+<arg>${mes_getText}</arg>
+<arg>${xpathElement}</arg>
+<msg timestamp="20211031 10:43:41.102" level="INFO">${xpath} = return document.evaluate("(//div[@class='printBox']//*[contains(text(),'Áo vest nam màu xanh lá')]/parent::td/parent::tr//following::tr[1]//td//span)[3]", document, null, XPathResult.FIRST_ORDERED_NOD...</msg>
+<status status="PASS" starttime="20211031 10:43:41.102" endtime="20211031 10:43:41.102"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<var>${contain}</var>
+<arg>${xpath}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20211031 10:43:41.103" level="INFO">Executing JavaScript:
+return document.evaluate("(//div[@class='printBox']//*[contains(text(),'Áo vest nam màu xanh lá')]/parent::td/parent::tr//following::tr[1]//td//span)[3]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.innerText;
+Without any arguments.</msg>
+<msg timestamp="20211031 10:43:41.612" level="INFO">${contain} = 2</msg>
+<status status="PASS" starttime="20211031 10:43:41.102" endtime="20211031 10:43:41.612"/>
+</kw>
+<kw name="Return From Keyword" library="BuiltIn">
+<arg>${contain}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<msg timestamp="20211031 10:43:41.612" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20211031 10:43:41.612" endtime="20211031 10:43:41.613"/>
+</kw>
+<msg timestamp="20211031 10:43:41.613" level="INFO">${printer_qty} = 2</msg>
+<status status="PASS" starttime="20211031 10:43:41.101" endtime="20211031 10:43:41.613"/>
+</kw>
+<kw name="Get text JS" library="javascript">
+<var>${printer_total_price}</var>
+<arg>${xpath_product_total_price}</arg>
+<kw name="Format String" library="StringFormat">
+<var>${xpath}</var>
+<arg>${mes_getText}</arg>
+<arg>${xpathElement}</arg>
+<msg timestamp="20211031 10:43:41.614" level="INFO">${xpath} = return document.evaluate("(//div[@class='printBox']//*[contains(text(),'Áo vest nam màu xanh lá')]/parent::td/parent::tr//following::tr[1]//td//span)[4]", document, null, XPathResult.FIRST_ORDERED_NOD...</msg>
+<status status="PASS" starttime="20211031 10:43:41.613" endtime="20211031 10:43:41.614"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<var>${contain}</var>
+<arg>${xpath}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20211031 10:43:41.614" level="INFO">Executing JavaScript:
+return document.evaluate("(//div[@class='printBox']//*[contains(text(),'Áo vest nam màu xanh lá')]/parent::td/parent::tr//following::tr[1]//td//span)[4]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.innerText;
+Without any arguments.</msg>
+<msg timestamp="20211031 10:43:42.126" level="INFO">${contain} = 6,000,000</msg>
+<status status="PASS" starttime="20211031 10:43:41.614" endtime="20211031 10:43:42.127"/>
+</kw>
+<kw name="Return From Keyword" library="BuiltIn">
+<arg>${contain}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<msg timestamp="20211031 10:43:42.127" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20211031 10:43:42.127" endtime="20211031 10:43:42.127"/>
+</kw>
+<msg timestamp="20211031 10:43:42.128" level="INFO">${printer_total_price} = 6,000,000</msg>
+<status status="PASS" starttime="20211031 10:43:41.613" endtime="20211031 10:43:42.128"/>
+</kw>
+<kw name="Return From Keyword" library="BuiltIn">
+<arg>${printer_name}</arg>
+<arg>${printer_price}</arg>
+<arg>${printer_qty}</arg>
+<arg>${printer_total_price}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<msg timestamp="20211031 10:43:42.128" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20211031 10:43:42.128" endtime="20211031 10:43:42.128"/>
+</kw>
+<status status="PASS" starttime="20211031 10:43:40.069" endtime="20211031 10:43:42.129"/>
+</kw>
+<msg timestamp="20211031 10:43:42.129" level="INFO">${printer_name} = Áo vest nam màu xanh lá</msg>
+<msg timestamp="20211031 10:43:42.129" level="INFO">${printer_price} = 3,899,000</msg>
+<msg timestamp="20211031 10:43:42.129" level="INFO">${printer_qty} = 2</msg>
+<msg timestamp="20211031 10:43:42.129" level="INFO">${printer_total_price} = 6,000,000</msg>
+<status status="PASS" starttime="20211031 10:43:40.069" endtime="20211031 10:43:42.129"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${printer_name}</arg>
+<arg>${product_name_input}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20211031 10:43:42.129" endtime="20211031 10:43:42.130"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${printer_qty}</arg>
+<arg>${product_qty_input}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20211031 10:43:42.130" endtime="20211031 10:43:42.130"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${printer_price}</arg>
+<arg>${product_price_expected}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20211031 10:43:42.130" endtime="20211031 10:43:42.131"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${printer_total_price}</arg>
+<arg>${product_total_price_expected}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20211031 10:43:42.131" endtime="20211031 10:43:42.131"/>
+</kw>
+<status status="PASS" starttime="20211031 10:43:18.764" endtime="20211031 10:43:42.131"/>
+</test>
+<test id="s1-t3" name="Verify invoices page">
 <kw name="Navigate to invoice page" library="listInvoicesPO">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${INVOICES URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20211025 16:35:12.845" level="INFO">Opening url 'https://tienphp01.kiotviet.vn/man/#/Invoices'</msg>
-<status status="PASS" starttime="20211025 16:35:12.844" endtime="20211025 16:35:14.615"/>
+<msg timestamp="20211031 10:43:42.133" level="INFO">Opening url 'https://saigondream01.kiotviet.vn/man/#/Invoices'</msg>
+<status status="PASS" starttime="20211031 10:43:42.132" endtime="20211031 10:43:43.433"/>
 </kw>
-<status status="PASS" starttime="20211025 16:35:12.844" endtime="20211025 16:35:14.615"/>
+<status status="PASS" starttime="20211031 10:43:42.132" endtime="20211031 10:43:43.433"/>
 </kw>
-<kw name="Get total invoice" library="listInvoicesPO">
-<var>${total_invoice}</var>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${total_invoice_lbl}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211025 16:35:14.616" endtime="20211025 16:35:17.597"/>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>3 times</arg>
+<arg>5s</arg>
+<arg>Click invoice by</arg>
+<arg>${invoice_id}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click invoice by" library="listInvoicesPO">
+<arg>${invoice_id}</arg>
+<kw name="Format String" library="StringFormat">
+<var>${xpath}</var>
+<arg>${invoice_id_lbl}</arg>
+<arg>${invoice_id}</arg>
+<msg timestamp="20211031 10:43:43.435" level="INFO">${xpath} = //span[@data-code='HD000104']</msg>
+<status status="PASS" starttime="20211031 10:43:43.434" endtime="20211031 10:43:43.435"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211031 10:43:43.435" level="INFO">Clicking element '//span[@data-code='HD000104']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211031 10:43:45.611" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-117.png"&gt;&lt;img src="selenium-screenshot-117.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211031 10:43:44.331" endtime="20211031 10:43:45.612"/>
+</kw>
+<msg timestamp="20211031 10:43:45.614" level="FAIL">Element with locator '//span[@data-code='HD000104']' not found.</msg>
+<status status="FAIL" starttime="20211031 10:43:43.435" endtime="20211031 10:43:45.614"/>
+</kw>
+<status status="FAIL" starttime="20211031 10:43:43.434" endtime="20211031 10:43:45.615"/>
+</kw>
+<kw name="Click invoice by" library="listInvoicesPO">
+<arg>${invoice_id}</arg>
+<kw name="Format String" library="StringFormat">
+<var>${xpath}</var>
+<arg>${invoice_id_lbl}</arg>
+<arg>${invoice_id}</arg>
+<msg timestamp="20211031 10:43:50.617" level="INFO">${xpath} = //span[@data-code='HD000104']</msg>
+<status status="PASS" starttime="20211031 10:43:50.617" endtime="20211031 10:43:50.617"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211031 10:43:50.618" level="INFO">Clicking element '//span[@data-code='HD000104']'.</msg>
+<status status="PASS" starttime="20211031 10:43:50.618" endtime="20211031 10:43:52.190"/>
+</kw>
+<status status="PASS" starttime="20211031 10:43:50.616" endtime="20211031 10:43:52.190"/>
+</kw>
+<status status="PASS" starttime="20211031 10:43:43.433" endtime="20211031 10:43:52.190"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<var>${name}</var>
+<var>${qty}</var>
+<var>${price}</var>
+<var>${total_price}</var>
+<arg>3 times</arg>
+<arg>5s</arg>
+<arg>Get detail invoice</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Get detail invoice" library="detailInvoicesPO">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${name_product}</var>
+<arg>${name_product_detail_invoice_lbl}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211031 10:43:53.658" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-118.png"&gt;&lt;img src="selenium-screenshot-118.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211031 10:43:52.724" endtime="20211031 10:43:53.658"/>
+</kw>
+<msg timestamp="20211031 10:43:53.659" level="FAIL">Element with locator '//div[contains(@class,'invoiceDetail')]//td[@class='cell-auto']' not found.</msg>
+<status status="FAIL" starttime="20211031 10:43:52.193" endtime="20211031 10:43:53.659"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
-<var>${total}</var>
-<arg>${total_invoice_lbl}</arg>
+<var>${qty_product}</var>
+<arg>${qty_product_detail_invoice_lbl}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20211025 16:35:18.623" level="INFO">${total} = 2,119,000</msg>
-<status status="PASS" starttime="20211025 16:35:17.597" endtime="20211025 16:35:18.623"/>
+<status status="NOT RUN" starttime="20211031 10:43:53.660" endtime="20211031 10:43:53.660"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${price_product}</var>
+<arg>${price_product_detail_invoice_lbl}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211031 10:43:53.660" endtime="20211031 10:43:53.660"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${total_price_product}</var>
+<arg>${total_price_product_detail_invoice_lbl}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211031 10:43:53.660" endtime="20211031 10:43:53.660"/>
 </kw>
 <kw name="Return From Keyword" library="BuiltIn">
-<arg>${total}</arg>
+<arg>${name_product}</arg>
+<arg>${qty_product}</arg>
+<arg>${price_product}</arg>
+<arg>${total_price_product}</arg>
 <doc>Returns from the enclosing user keyword.</doc>
-<msg timestamp="20211025 16:35:18.624" level="INFO">Returning from the enclosing user keyword.</msg>
-<status status="PASS" starttime="20211025 16:35:18.624" endtime="20211025 16:35:18.624"/>
+<status status="NOT RUN" starttime="20211031 10:43:53.660" endtime="20211031 10:43:53.661"/>
 </kw>
-<msg timestamp="20211025 16:35:18.625" level="INFO">${total_invoice} = 2,119,000</msg>
-<status status="PASS" starttime="20211025 16:35:14.616" endtime="20211025 16:35:18.625"/>
+<status status="FAIL" starttime="20211031 10:43:52.192" endtime="20211031 10:43:53.661"/>
+</kw>
+<kw name="Get detail invoice" library="detailInvoicesPO">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${name_product}</var>
+<arg>${name_product_detail_invoice_lbl}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211031 10:43:59.701" level="INFO">${name_product} = Áo vest nam màu xanh lá</msg>
+<status status="PASS" starttime="20211031 10:43:58.663" endtime="20211031 10:43:59.701"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${qty_product}</var>
+<arg>${qty_product_detail_invoice_lbl}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211031 10:44:00.736" level="INFO">${qty_product} = 2</msg>
+<status status="PASS" starttime="20211031 10:43:59.701" endtime="20211031 10:44:00.736"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${price_product}</var>
+<arg>${price_product_detail_invoice_lbl}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211031 10:44:01.767" level="INFO">${price_product} = 3,899,000</msg>
+<status status="PASS" starttime="20211031 10:44:00.737" endtime="20211031 10:44:01.767"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${total_price_product}</var>
+<arg>${total_price_product_detail_invoice_lbl}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211031 10:44:02.807" level="INFO">${total_price_product} = 6,000,000</msg>
+<status status="PASS" starttime="20211031 10:44:01.768" endtime="20211031 10:44:02.807"/>
+</kw>
+<kw name="Return From Keyword" library="BuiltIn">
+<arg>${name_product}</arg>
+<arg>${qty_product}</arg>
+<arg>${price_product}</arg>
+<arg>${total_price_product}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<msg timestamp="20211031 10:44:02.808" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20211031 10:44:02.808" endtime="20211031 10:44:02.809"/>
+</kw>
+<status status="PASS" starttime="20211031 10:43:58.662" endtime="20211031 10:44:02.809"/>
+</kw>
+<msg timestamp="20211031 10:44:02.809" level="INFO">${name} = Áo vest nam màu xanh lá</msg>
+<msg timestamp="20211031 10:44:02.810" level="INFO">${qty} = 2</msg>
+<msg timestamp="20211031 10:44:02.810" level="INFO">${price} = 3,899,000</msg>
+<msg timestamp="20211031 10:44:02.810" level="INFO">${total_price} = 6,000,000</msg>
+<status status="PASS" starttime="20211031 10:43:52.191" endtime="20211031 10:44:02.810"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
-<arg>${total_customer_pay}</arg>
-<arg>${total_invoice}</arg>
+<arg>${name}</arg>
+<arg>${product_name_input}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20211025 16:35:18.625" endtime="20211025 16:35:18.626"/>
+<status status="PASS" starttime="20211031 10:44:02.810" endtime="20211031 10:44:02.811"/>
 </kw>
-<status status="PASS" starttime="20211025 16:34:01.720" endtime="20211025 16:35:18.626"/>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${price}</arg>
+<arg>${product_price_expected}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20211031 10:44:02.811" endtime="20211031 10:44:02.812"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${total_price}</arg>
+<arg>${product_total_price_expected}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20211031 10:44:02.812" endtime="20211031 10:44:02.812"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${qty}</arg>
+<arg>${product_qty_input}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20211031 10:44:02.813" endtime="20211031 10:44:02.813"/>
+</kw>
+<status status="PASS" starttime="20211031 10:43:42.132" endtime="20211031 10:44:02.813"/>
 </test>
 <doc>A test suite with a single test for valid login.
 
 This test has a workflow that is created using keywords in
 the imported resource file.</doc>
-<status status="PASS" starttime="20211025 16:33:21.261" endtime="20211025 16:35:18.628"/>
+<status status="PASS" starttime="20211031 10:42:56.918" endtime="20211031 10:44:02.814"/>
 </suite>
 <statistics>
 <total>
@@ -845,7 +681,7 @@ the imported resource file.</doc>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="saleProducts">saleProducts</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="printProducts">printProducts</stat>
 </suite>
 </statistics>
 <errors>

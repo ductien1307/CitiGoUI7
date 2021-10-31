@@ -3,9 +3,11 @@ Library           SeleniumLibrary
 Library           StringFormat
 
 *** Variables ***
-${mes_click}      document.evaluate("{0}", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
-${mes_sendkey}    document.evaluate("{0}", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.send_keys('\n')
-${mes_getvalue}    document.evaluate("{0}", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.return()
+${mes_click}        document.evaluate("{0}", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
+${mes_sendkey}      document.evaluate("{0}", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.send_keys('\n')
+${mes_getvalue}     document.evaluate("{0}", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.return()
+${mes_getText}      return document.evaluate("{0}", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.innerText;
+
 
 *** Keywords ***
 Click Element JS
@@ -40,3 +42,9 @@ Get saved code until success
   \     ${saved_code}    Get saved code after execute
   \     Exit For Loop If    '${saved_code}' !='${EMPTY}'
   Return From Keyword    ${saved_code}
+
+Get text JS
+    [Arguments]    ${xpathElement}
+    ${xpath}=    Format String    ${mes_getText}    ${xpathElement}
+    ${contain}=     Execute Javascript    ${xpath}
+    Return From Keyword     ${contain}

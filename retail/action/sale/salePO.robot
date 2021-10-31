@@ -46,6 +46,7 @@ Input price product
 #
 
 Click Pay Button
+    wait until element is visible       ${pay_btn}
     click element js      ${pay_btn}
 
 Get total customer pay

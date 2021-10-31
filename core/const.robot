@@ -1,5 +1,5 @@
 *** Variables ***
-${SERVER}         tienphp01.kiotviet.vn
+${SERVER}         saigondream01.kiotviet.vn
 ${BROWSER}        Chrome
 ${DELAY}          0.5
 ${VALID USER}     demo
@@ -18,3 +18,4 @@ ${F9_KEY}         \ue039
 ${TAB_KEY}        \\9
 ${F5_KEY}         \\116
 ${HTML_XPATH}     xpath://html
+
